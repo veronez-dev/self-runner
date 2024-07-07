@@ -1,9 +1,9 @@
-name: Teste Self Runner
+name: Fake Self Runner
 on: 
     workflow_dispatch
 jobs:
     teste:
         runs-on: self-hosted
         steps: 
-            - name: TEste
+            - name: Fake Task
               run: echo "Teste self runner"
