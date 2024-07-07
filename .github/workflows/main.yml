@@ -7,6 +7,7 @@ jobs:
         steps: 
             - name: Fake Task
               run: echo "Teste self runner"
+            - uses: actions/checkout@v4
             - name: Build and push Docker images
               uses: docker/build-push-action@v6.3.0
               with:
