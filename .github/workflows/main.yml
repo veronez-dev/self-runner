@@ -1,3 +1,9 @@
 name: Teste Self Runner
 on: 
-  
+    workflow_dispatch
+jobs:
+    teste:
+        runs-on: self-runner
+        steps: 
+            - name: TEste
+              run: echo "Teste self runner"
